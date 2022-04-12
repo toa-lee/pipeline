@@ -3,6 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - /bin/bash
       - sudo su -
       - yum install docker -y
       - sudo service docker start
