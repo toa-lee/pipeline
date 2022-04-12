@@ -4,7 +4,3 @@ phases:
   build:
     commands:
       - sudo docker run -p 9050:9050 -d mike103/node-web-app
-      
-artifacts:
-  files:
-    - '**/*'
