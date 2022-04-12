@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - sudo su -
-      - yum install docker
+      - yum install docker -y
       - service docker start
   build:
     commands:
