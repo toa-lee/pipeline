@@ -7,3 +7,8 @@ phases:
   build:
     commands:
       - docker run -p 9050:9050 -d mike103/node-web-app
+      
+artifacts:
+  files:
+    - '**/*'
+  base-directory: /home/ec2-user
