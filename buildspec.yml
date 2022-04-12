@@ -1,13 +1,6 @@
 version: 0.2
 
 phases:
-  pre_build:
-    commands:
-      - /bin/bash
-      - sudo su -
-      - apt update -y
-      - apt install docker -y
-      - sudo service docker start
   build:
     commands:
       - sudo docker run -p 9050:9050 -d mike103/node-web-app
