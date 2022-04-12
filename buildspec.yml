@@ -4,6 +4,8 @@ phases:
   pre_build:
     commands:
       - sudo su -
+      - yum install docker
+      - service docker start
   build:
     commands:
       - docker run -p 9050:9050 -d mike103/node-web-app
