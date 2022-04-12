@@ -5,7 +5,7 @@ phases:
     commands:
       - /bin/bash
       - sudo su -
-      - yum install docker -y
+      - apt install docker -y
       - sudo service docker start
   build:
     commands:
